@@ -1,0 +1,33 @@
+name: Bug report
+description: Crash, OBD connection problem, wrong value, display issue
+labels: [bug]
+body:
+  - type: textarea
+    attributes:
+      label: What happens
+      description: What you did, what you expected, what you got.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: App version
+      placeholder: 2.0.0
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Phone and Android version
+      placeholder: Pixel 8, Android 15
+  - type: input
+    attributes:
+      label: Adapter
+      placeholder: OBDLink CX, vLinker MC+, ELM327 clone...
+  - type: input
+    attributes:
+      label: Vehicle
+      placeholder: VW Polo 6R 1.6 TDI 90 (2011)
+  - type: textarea
+    attributes:
+      label: OBD adapter log
+      description: OBD adapter screen > Copy, then paste here.
+      render: text
