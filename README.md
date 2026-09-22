@@ -1,4 +1,4 @@
-﻿<p align="center">
+<p align="center">
   <img src="docs/logo.png" width="112" alt="Performance Monitor AAOBD icon">
 </p>
 
@@ -16,7 +16,7 @@
   <a href="LICENSE.md"><img src="https://img.shields.io/badge/license-GPLv3-blue" alt="GPLv3"></a>
 </p>
 
-<p align="center"><a href="README.fr.md">Version franÃ§aise</a></p>
+<p align="center"><a href="README.fr.md">Version française</a></p>
 
 ---
 
