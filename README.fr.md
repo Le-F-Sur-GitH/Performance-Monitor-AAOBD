@@ -13,6 +13,17 @@
 
 ---
 
+## Captures
+
+<p align="center">
+  <img src="docs/screenshots/dashboard.jpg" width="100%" alt="Tableau de bord sur un autoradio Volkswagen : température d'eau, pression turbo, température d'huile">
+</p>
+<p align="center">
+  <img src="docs/screenshots/settings.jpg" width="32%" alt="Réglages sur le téléphone : thème, police, arrière-plan">
+  &nbsp;
+  <img src="docs/screenshots/adapter.jpg" width="32%" alt="Écran Adaptateur OBD : connecté, ECU OK">
+</p>
+
 ## Fonctions
 
 - **Tableaux de bord sur l'écran de la voiture** : jusqu'à 3 jauges et 4 valeurs par tableau, autant de tableaux que voulu, balayage pour changer.

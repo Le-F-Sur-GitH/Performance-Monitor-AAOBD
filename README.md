@@ -20,6 +20,17 @@
 
 ---
 
+## Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/dashboard.jpg" width="100%" alt="Dashboard on a Volkswagen head unit: coolant temperature, boost pressure and oil temperature">
+</p>
+<p align="center">
+  <img src="docs/screenshots/settings.jpg" width="32%" alt="Phone settings: theme, font, background">
+  &nbsp;
+  <img src="docs/screenshots/adapter.jpg" width="32%" alt="OBD adapter screen: connected, ECU OK">
+</p>
+
 ## Features
 
 - **Dashboards on the car screen**: up to 3 gauges and 4 values per dashboard, as many dashboards as you want, swipe to switch.
