@@ -1,0 +1,24 @@
+// SpeedView by anastr (agronick fork), Apache 2.0, see LICENSE. Vendored in this repository.
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    namespace "com.github.anastr.speedviewlib"
+    compileSdk 34
+
+    defaultConfig {
+        minSdkVersion 28
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
