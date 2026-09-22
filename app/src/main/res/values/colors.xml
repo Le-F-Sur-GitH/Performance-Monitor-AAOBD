@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#243659</color>
+    <color name="primary_dark">#000000</color>
+    <color name="accent">#ACABAB</color>
+    <color name="red">#eec50101</color>
+    <color name="highspeed">#FF0000</color>
+    <color name="aqua">#7700aeef</color>
+
+    <color name="yellow">#77fecc00</color>
+    <color name="blue">#141451</color>
+    <color name="fordblue">#0066ff</color>
+    <color name="green">#7700FF00</color>
+    <color name="white">#E2DBDB</color>
+    <color name="pink">#77FF69B4</color>
+    <color name="orange">#77FF8888</color>
+    <color name="themed">?attr/themedNeedleColor</color>
+
+
+
+    <color name="car_primary">@android:color/white</color>
+    <color name="car_accent">@color/car_red_700</color>
+
+    <color name="cardview_background">@color/cardview_dark_background</color>
+
+    <color name="primary_dark_material_dark">#0051B5</color>
+    <color name="design_default_color_secondary">#658DBD</color>
+    <color name="meterial_accient">#11206C</color>
+
+    <color name="primaryColor">#0051B5</color>
+    <color name="primaryLightColor">#658DBD</color>
+    <color name="primaryDarkColor">#11206C</color>
+
+    <color name="secondaryColor">#CC0051B5</color>
+    <color name="secondaryLightColor">#CC658DBD</color>
+    <color name="secondaryDarkColor">#CC11206C</color>
+
+    <color name="primaryTextColor">@color/white</color>
+    <color name="bgColor">#FDFDFD</color>
+    <color name="secondaryTextColor">#222</color>
+    <color name="tintColor">@color/primaryDarkColor</color>
+    <color name="snackbarBtnText">#FFF</color>
+
+    <color name="graphColor1">#3daee9</color>
+    <color name="graphColor2">#aee93d</color>
+    <color name="graphColor3">#e9783d</color>
+    <color name="transparentBlack">#88000000</color>
+
+    <color name="status_ok">#2E7D32</color>
+    <color name="status_warn">#F9A825</color>
+    <color name="status_error">#C62828</color>
+    <color name="status_idle">#9E9E9E</color>
+</resources>

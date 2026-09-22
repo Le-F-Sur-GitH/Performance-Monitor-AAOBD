@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="24dp">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:alpha="0.7"
+            android:gravity="center"
+            android:text="@string/app_version" />
+
+        <TextView
+            android:id="@+id/txtProjectUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:autoLink="web"
+            android:gravity="center"
+            android:text="@string/project_url" />
+
+        <TextView
+            style="@style/CreditsHeader"
+            android:text="@string/credits_modifications" />
+
+        <TextView
+            style="@style/CreditsBody"
+            android:text="@string/credits_developer" />
+
+        <TextView
+            style="@style/CreditsHeader"
+            android:text="@string/credits_author" />
+
+        <TextView
+            style="@style/CreditsBody"
+            android:text="@string/credits_original_app" />
+
+        <TextView
+            style="@style/CreditsHeader"
+            android:text="@string/credits_basedon" />
+
+        <TextView
+            style="@style/CreditsBody"
+            android:text="Martoreto, Chillout" />
+
+        <TextView
+            style="@style/CreditsHeader"
+            android:text="@string/credits_thanks" />
+
+        <TextView
+            style="@style/CreditsBody"
+            android:text="mkwatchface, Ddemtlapps, Hugo Morais, Jose Alberto Morales Nery, kacnje, Mirco, Paul Rusu, tasos-kom, Vasyl Solevych, Vincent chouquet, Vladi69" />
+
+        <TextView
+            style="@style/CreditsHeader"
+            android:text="@string/icon_credits" />
+
+        <LinearLayout
+            android:id="@+id/ic_credits_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:alpha="0.7"
+            android:gravity="center"
+            android:text="@string/credits_drivesafely" />
+    </LinearLayout>
+</ScrollView>

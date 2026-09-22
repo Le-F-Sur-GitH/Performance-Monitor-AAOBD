@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:key="displayCat"
+        android:singleLineTitle="false"
+        android:title="@string/obd_waiting">
+
+        <EditTextPreference
+            android:key="performanceTitle"
+            android:title=""
+            android:defaultValue=""
+            android:icon="@drawable/settings_title_tint"
+            android:inputType="text"
+            android:persistent="false"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="displayOptions" />
+</PreferenceScreen>

@@ -1,0 +1,214 @@
+plugins {
+    id "com.google.protobuf" version "0.9.4"
+    id 'kotlin-kapt'
+ // id 'com.google.dagger.hilt.android'
+}
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+
+Properties props = new Properties()
+props.load(new FileInputStream("$project.rootDir/version.properties"))
+
+def versionMajor = props.getProperty("majorVersion") as Integer
+def versionMinor = props.getProperty("minorVersion") as Integer
+def versionPatch = props.getProperty("patchVersion") as Integer
+
+android {
+    namespace "com.lef.pmaaobd.stats"
+    compileSdk 34
+    defaultConfig {
+        applicationId "com.lef.pmaaobd"
+        minSdkVersion 28
+        targetSdkVersion 34
+        versionCode versionMajor * 1000 + versionMinor * 100 + versionPatch * 10
+        versionName "${versionMajor}.${versionMinor}.${versionPatch}"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+        buildConfigField "boolean", "SIMULATE_METRICS", "false"
+        resourceConfigurations += ['en', 'cs', 'de', 'el', 'es', 'fr', 'fr-rCA', 'it', 'nl', 'pl', 'pt', 'pt-rBR', 'ru', 'sl', 'uk', 'zh-rHK']
+    }
+    applicationVariants.configureEach { variant ->
+        variant.outputs.configureEach {
+            outputFileName = "PerformanceMonitorAAOBD-${variant.versionName}-${variant.buildType.name}.apk"
+        }
+    }
+    signingConfigs {
+        release {
+            def ksFile = rootProject.file("keystore.properties")
+            def ks = new Properties()
+            if (ksFile.exists()) ks.load(new FileInputStream(ksFile))
+            def path = System.getenv("RELEASE_KEYSTORE_FILE") ?: ks.getProperty("storeFile")
+            if (path != null && file(path).exists()) {
+                storeFile file(path)
+                storePassword System.getenv("RELEASE_KEYSTORE_PASSWORD") ?: ks.getProperty("storePassword")
+                keyAlias System.getenv("RELEASE_KEY_ALIAS") ?: ks.getProperty("keyAlias")
+                keyPassword System.getenv("RELEASE_KEY_PASSWORD") ?: ks.getProperty("keyPassword")
+            }
+        }
+    }
+    buildTypes {
+        debug {
+            versionNameSuffix ".debug"
+            resValue "string", "app_version",
+                    "${defaultConfig.versionName}${versionNameSuffix}"
+            buildConfigField "boolean", "SIMULATE_METRICS", "true"
+        }
+        release_debug {
+            minifyEnabled true
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            resValue "string", "app_version", "${defaultConfig.versionName}${versionNameSuffix}"
+            signingConfig signingConfigs.debug
+            buildConfigField "boolean", "SIMULATE_METRICS", "true"
+        }
+        release {
+            debuggable false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            resValue "string", "app_version", "${defaultConfig.versionName}"
+            signingConfig signingConfigs.release.storeFile != null ? signingConfigs.release : signingConfigs.debug
+        }
+    }
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+        dataBinding true
+        compose true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    packaging {
+        jniLibs {
+            useLegacyPackaging true
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.4"
+    }
+}
+
+configurations.configureEach {
+    exclude group: 'com.google.guava', module: 'guava-jdk5'
+}
+
+configurations {
+    cleanedAnnotations
+    implementation.exclude group: 'org.jetbrains' , module:'annotations'
+}
+
+
+dependencies {
+    // Replaced with updated SDK from "https://github.com/cupral/aauto-sdk.git" (as git-submodule)
+    //implementation 'com.github.martoreto:aauto-sdk:v4.7'
+    implementation project(path: ':speedviewlib', configuration: 'default')
+    implementation files('../lib/aauto.aar')
+
+    implementation 'com.jjoe64:graphview:4.2.2'
+    implementation 'com.github.christophesmet:android_maskable_layout:v1.3.1'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+    implementation 'com.jakewharton.timber:timber:5.0.1'
+
+    //noinspection GradleDependency
+    implementation 'com.google.guava:guava:32.1.2-jre'
+    implementation 'com.google.android.gms:play-services-auth:21.3.0'
+    implementation 'com.google.android.gms:play-services-identity:18.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.preference:preference-ktx:1.2.1'
+    implementation "androidx.datastore:datastore-preferences:1.1.1"
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.7'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.8.5'
+    implementation project(':speedviewlib')
+
+    testImplementation 'junit:junit:4.13.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation 'com.ezylang:EvalEx:3.0.5'
+
+    implementation 'androidx.annotation:annotation:1.9.1'
+    implementation "androidx.datastore:datastore:1.1.1"
+    implementation 'com.google.protobuf:protobuf-java-util:3.25.1'
+    implementation 'com.github.rongi:rotate-layout:v3.0.0'
+    implementation 'androidx.databinding:databinding-runtime:8.7.3'
+    // implementation 'com.google.dagger:hilt-android:2.48'
+    //  kapt 'com.google.dagger:hilt-compiler:2.48'
+    implementation 'com.github.martin-stone:hsv-alpha-color-picker-android:3.1.0'
+
+
+    def composeBom = platform('androidx.compose:compose-bom:2023.10.01')
+    implementation composeBom
+    androidTestImplementation composeBom
+
+    // Choose one of the following:
+    // Material Design 3
+    implementation 'androidx.compose.material3:material3'
+    // or skip Material Design and build directly on top of foundational components
+    implementation 'androidx.compose.foundation:foundation'
+    // or only import the main APIs for the underlying toolkit systems,
+    // such as input and measurement/layout
+    implementation 'androidx.compose.ui:ui'
+
+    // Android Studio Preview support
+    implementation 'androidx.compose.ui:ui-tooling-preview'
+    debugImplementation 'androidx.compose.ui:ui-tooling'
+
+    // UI Tests
+    androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
+    debugImplementation 'androidx.compose.ui:ui-test-manifest'
+
+    // Optional - Add window size utils
+    implementation 'androidx.compose.material3:material3-window-size-class'
+
+    // Optional - Integration with activities
+    implementation 'androidx.activity:activity-compose:1.9.3'
+    // Optional - Integration with ViewModels
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7'
+    // Optional - Integration with LiveData
+    implementation 'androidx.compose.runtime:runtime-livedata'
+
+    implementation "org.burnoutcrew.composereorderable:reorderable:0.9.6"
+}
+
+protobuf {
+    // Configures the Protobuf compilation and the protoc executable
+    protoc {
+        // Downloads from the repositories
+        artifact = "com.google.protobuf:protoc:3.14.0"
+    }
+
+    // Generates the java Protobuf-lite code for the Protobufs in this project
+    generateProtoTasks {
+        all().each { task ->
+            task.builtins {
+                // Configures the task output type
+                java {
+                    // Java Lite has smaller code size and is recommended for Android
+                    // option 'lite'
+                }
+            }
+        }
+    }
+}
+
+kapt {
+    correctErrorTypes true
+}
+
+//apply plugin: 'com.google.gms.google-services'
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url 'https://jitpack.io' }
+}

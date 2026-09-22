@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_credits_title">Avtorji</string>
+
+    <!-- Fuzzy -->
+    <string name="activity_main_title">Performance Monitor AAOBD</string>
+    <string name="activity_settings_title">Performance Monitor AAOBD</string>
+    <string name="activity_stopwatch_title">Štoparica</string>
+    <string name="app_car_service_name">Performance Monitor AAOBD</string>
+    <string name="app_name">Performance Monitor AAOBD</string>
+    <string name="credits_author">Narejeno na podlagi aplikacije:</string>
+    <string name="credits_basedon">Narejeno na SDK in demo aplikaciji:</string>
+    <string name="credits_drivesafely">Varno vožnjo.</string>
+    <string name="credits_thanks">Posebna zahvala:</string>
+    <string name="element_VIN">VIN</string>
+    <string name="element_batteryVoltage">Napetost akumulatorja</string>
+    <string name="element_brakePressure">Pritisk zaviranja</string>
+    <string name="element_coolantTemperature">Temepratura hladilne tekočine</string>
+    <string name="element_gearboxOilTemperature">Menjalnik</string>
+    <string name="element_lateralAcceleration">Stranski pospešek</string>
+    <string name="element_longitudinalAcceleration">Vzdolžen pospešek</string>
+    <string name="element_navAltitude">Nadmorska višina</string>
+    <string name="element_navHeading">Smer</string>
+    <string name="element_none">Nič</string>
+    <string name="element_odometer">Števec</string>
+    <string name="element_oilTemperature">Temperatura olja</string>
+    <string name="element_outsideTemperature">Zunanja temperatura</string>
+    <string name="element_soundVolume">Glasnost</string>
+    <string name="element_wheelAngle">Kot kolesa</string>
+    <string name="element_wheel">Kolo</string>
+    <string name="element_world">Svet</string>
+    <string name="element_distance">Razdalja</string>
+    <string name="element_ecoaverage">Eko povprečje</string>
+    <string name="element_eco">Eko</string>
+    <string name="exhaust">Izpuh</string>
+    <string name="element_measurement">Meritve</string>
+    <string name="element_motherboard">Matična plošča</string>
+    <string name="element_obd2">OBD2</string>
+    <string name="element_radio">Radio</string>
+    <string name="element_wrench">Ključ</string>
+    <string name="element_tire">Pnevmatika</string>
+    <string name="pref_appearance">Videz</string>
+    <string name="pref_centerclock">Sredinski merilnik</string>
+    <string name="pref_font">Pisava</string>
+
+    <!-- Fuzzy -->
+    <string name="pref_highlow">Najvišje vrednosti</string>
+    <string name="pref_highlowmarks">Označi najvišje vrednosti na merilniku</string>
+    <string name="pref_highvis_off">Prikaži iglo na merilniku</string>
+    <string name="pref_highvis_on">Prikaži žarek namesto igle</string>
+    <string name="pref_leftclock">Levi merilnik</string>
+    <string name="pref_rightclock">Desni merilnik</string>
+    <string name="pref_theme">Tema</string>
+    <string name="element_obd_fuelpressure">Pritisk goriva</string>
+    <string name="element_obd_phonebatterylevel">Napolnjenost baterije telefona</string>
+    <string name="element_obd_phonebarometer">Pritisk - podatek iz telefona</string>
+    <string name="element_obd_catalysttemperature">Katalizator</string>
+    <string name="element_obd_fuellevel">Nivo goriva</string>
+    <string name="element_barometer">Pritisk</string>
+    <string name="bg_vw2">Carbon fiber</string>
+    <string name="bg_vw3">Spotlight</string>
+    <string name="bg_vwplaid">GTI Tartan</string>
+    <string name="bg_gte">GTE Tartan</string>
+    <string name="bg_vwgtd">GTD Tartan</string>
+    <string name="bg_black">Black</string>
+    <string name="bg_cloth">Cloth</string>
+    <string name="bg_rock">Rock</string>
+    <string name="bg_outrun">Outrun</string>
+    <string name="bg_plain">Plain</string>
+    <string name="bg_seat">Lines</string>
+    <string name="bg_seat2">Dark grid</string>
+    <string name="bg_skoda">Columbus</string>
+    <string name="bg_skoda2">Columbus Sport</string>
+    <string name="bg_skodaone">OneApp</string>
+    <string name="bg_blackboard">Blackboard</string>
+    <string name="bg_test">Test</string>
+    <string name="bg_beetle">Herbie</string>
+    <string name="pref_background">Ozadje</string>
+    <string name="bg_aa">Android Auto</string>
+    <string name="pid">PID</string>
+
+    <!-- Fuzzy -->
+    <string name="min_value">Min vrednost</string>
+
+    <!-- Fuzzy -->
+    <string name="max_value">Max vrednost</string>
+    <string name="formulas">Formule</string>
+    <string name="expressionDocumentation">Dokumentacija</string>
+    <string name="convert_f_to_c">Fahrenheit -> Celzij</string>
+    <string name="convert_c_to_f">Celzij -> Fahrenheit</string>
+    <string name="convert_bar_psi">BAR -> PSI</string>
+    <string name="convert_psi_bar">PSI -> BAR</string>
+    <string name="convert_km_to_miles">km -> milje</string>
+    <string name="element_transmission">Menjalnik</string>
+</resources>

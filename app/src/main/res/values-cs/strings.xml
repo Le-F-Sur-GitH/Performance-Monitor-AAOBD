@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_credits_title">O projektu</string>
+
+    <!-- Fuzzy -->
+    <string name="activity_main_title">Performance Monitor AAOBD</string>
+    <string name="activity_settings_title">Performance Monitor AAOBD</string>
+    <string name="activity_stopwatch_title">Stopky</string>
+    <string name="app_car_service_name">Performance Monitor AAOBD</string>
+    <string name="app_name">Performance Monitor AAOBD</string>
+    <string name="credits_author">Aplikace byla vytvořena:</string>
+    <string name="credits_basedon">Na základě SDK a demo aplikace od:</string>
+    <string name="credits_drivesafely">Bezpečnou jízdu.</string>
+    <string name="credits_thanks">Speciálně děkuji:</string>
+    <string name="element_VIN">VIN</string>
+    <string name="element_batteryVoltage">Napětí baterie</string>
+    <string name="element_brakePressure">Tlak na brzdový pedál</string>
+    <string name="element_coolantTemperature">Teplota chladící kapaliny</string>
+    <string name="element_gearboxOilTemperature">Teplota převodovky</string>
+    <string name="element_lateralAcceleration">Příčné přetížení</string>
+    <string name="element_longitudinalAcceleration">Podélné přetížení</string>
+    <string name="element_navAltitude">Nadmořská výška</string>
+    <string name="element_navHeading">Kompas</string>
+    <string name="element_none">Nepoužito</string>
+    <string name="element_odometer">Stav km</string>
+    <string name="element_oilTemperature">Teplota oleje</string>
+    <string name="element_outsideTemperature">Venkovní teplota</string>
+    <string name="element_soundVolume">Hlasitost</string>
+    <string name="element_wheelAngle">Úhel volantu</string>
+    <string name="element_yawRate">Náklon</string>
+    <string name="pref_appearance">Vzhled</string>
+    <string name="pref_centerclock">Prostřední budík</string>
+    <string name="pref_font">Font</string>
+
+    <!-- Fuzzy -->
+    <string name="pref_highlow">Nejvyšší / nejnižší hodnoty</string>
+    <string name="pref_highlowmarks">Značka min/max hodnoty na budících</string>
+    <string name="pref_highvis">Reflexní číselníky</string>
+    <string name="pref_highvis_off">Zobrazit ručičku na budících</string>
+    <string name="pref_highvis_on">Zobrazí reflexní číselníky</string>
+    <string name="pref_leftclock">Levý budík</string>
+    <string name="pref_rightclock">Pravý budík</string>
+    <string name="pref_theme">Téma</string>
+    <string name="pref_ticks">Hodnoty v budících</string>
+    <string name="pref_ticks_off">Nezobrazí hodnoty v budících</string>
+    <string name="pref_ticks_on">Zobrazí hodnoty v budících</string>
+    <string name="pref_background">Pozadí</string>
+    <string name="item_details_go_back">Zpět</string>
+</resources>

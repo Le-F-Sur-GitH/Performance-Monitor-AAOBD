@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_credits_title">Credits</string>
+
+    <!-- Fuzzy -->
+    <string name="activity_main_title">Performance Monitor AAOBD</string>
+    <string name="activity_settings_title">Performance Monitor AAOBD</string>
+    <string name="activity_stopwatch_title">Stopwatch</string>
+    <string name="app_car_service_name">Performance Monitor AAOBD</string>
+    <string name="app_name">Performance Monitor AAOBD</string>
+    <string name="credits_author">Deze applicatie is gemaakt door:</string>
+    <string name="credits_basedon">Gebaseerd op de SDK en demo App door:</string>
+    <string name="credits_drivesafely">Rijd voorzichtig.</string>
+    <string name="credits_thanks">Speciale dank aan:</string>
+    <string name="element_VIN">Chassisnummer</string>
+    <string name="element_batteryVoltage">Batterij voltage</string>
+    <string name="element_brakePressure">Rempedaal druk</string>
+    <string name="element_coolantTemperature">Koelvloeistof temperatuur</string>
+    <string name="element_gearboxOilTemperature">DSG temperatuur</string>
+    <string name="element_lateralAcceleration">Laterale G\'s</string>
+    <string name="element_longitudinalAcceleration">Longitudinale G\'s</string>
+    <string name="element_navAltitude">Hoogte</string>
+    <string name="element_navHeading">GPS-richting</string>
+    <string name="element_none">Geen</string>
+    <string name="element_odometer">Kilometerstand</string>
+    <string name="element_oilTemperature">Olie temperatuur</string>
+    <string name="element_outsideTemperature">Buitentemperatuur</string>
+    <string name="element_soundVolume">Media volume</string>
+    <string name="element_wheelAngle">Wielhoek</string>
+    <string name="element_yawRate">Gierhoek</string>
+    <string name="pref_appearance">Weergave</string>
+    <string name="pref_centerclock">Klok midden</string>
+    <string name="pref_font">Lettertype</string>
+
+    <!-- Fuzzy -->
+    <string name="pref_highlow">Hoogste waarden</string>
+    <string name="pref_highlowmarks">Markeer hoogste waarden op de klokken</string>
+    <string name="pref_highvis">Hoge contrast klokweergave</string>
+    <string name="pref_highvis_off">Toon een wijzer op de klok</string>
+    <string name="pref_highvis_on">Toon een hoog-contrast straal in plaats van een wijzer</string>
+    <string name="pref_leftclock">Klok links</string>
+    <string name="pref_rightclock">Klok rechts</string>
+    <string name="pref_theme">Thema</string>
+    <string name="pref_ticks">Waarden op de klok</string>
+    <string name="pref_ticks_off">Geef geen waarde bij de streepjes</string>
+    <string name="pref_ticks_on">Geef waarde weer bij de streepjes</string>
+    <string name="bg_vwplaid">GTI ruitjespatroon</string>
+    <string name="bg_gte">GTE ruitjespatroon</string>
+    <string name="bg_vwgtd">GTD ruitjespatroon</string>
+    <string name="pref_background">Achtergrond</string>
+    <string name="item_details_go_back">Terug</string>
+</resources>

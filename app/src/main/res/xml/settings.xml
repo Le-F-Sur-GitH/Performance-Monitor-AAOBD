@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:singleLineTitle="false"
+        android:title="@string/pref_appearance">
+
+
+        <com.lef.pmaaobd.prefs.ImageListPreference
+            android:entries="@array/Themes"
+            android:entryValues="@array/Themes"
+            android:key="selectedTheme"
+            android:title="@string/pref_theme"
+            android:persistent="false"
+            app:entryImages="@array/ThemesThumbs" />
+        <com.lef.pmaaobd.prefs.ImageListPreference
+            android:entries="@array/fontEntries"
+            android:entryValues="@array/fontValues"
+            android:key="selectedFont"
+            android:title="@string/pref_font"
+            app:entryImages="@array/FontThumbs"
+            android:persistent="false"
+            app:tint="@color/tintColor"
+        />
+        <com.lef.pmaaobd.prefs.ImageListPreference
+            android:entries="@array/backgroundstrings"
+            android:entryValues="@array/backgrounds"
+            app:entryImages="@array/thumbs_backgrounds"
+            android:key="selectedBackground"
+            android:persistent="false"
+            android:title="@string/pref_background" />
+
+        <CheckBoxPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="false"
+            android:key="centerGaugeLarge"
+            android:summaryOff="@string/pref_shrink_gauge_off"
+            android:summaryOn="@string/pref_shrink_gauge_on"
+            android:persistent="false"
+            android:title="@string/pref_shrink_gauge"
+             />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="minMaxBelow"
+            android:summary="@string/minmax_below_desc"
+            android:persistent="false"
+            android:title="@string/minmax_below"
+            />
+
+
+        <EditTextPreference
+            android:inputType="number"
+            android:key="dashboardCount"
+            android:title="@string/num_screens"
+            android:defaultValue="1"
+            android:persistent="false"
+
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/media">
+        <CheckBoxPreference
+            android:key="mediaBg"
+            android:persistent="false"
+            android:summary="@string/media_background_summary"
+            android:title="@string/media_background_title" />
+        <SeekBarPreference
+            android:defaultValue="0"
+            android:dependency="mediaBg"
+            android:key="blurArtwork"
+            android:max="30"
+            android:persistent="false"
+            android:summary="@string/media_blur_summary"
+            android:title="@string/media_blur_title"
+            app:min="0"
+            app:showSeekBarValue="true" />
+        <SeekBarPreference
+            android:defaultValue="0"
+            android:dependency="mediaBg"
+            android:key="darkenArtwork"
+            android:max="100"
+            android:persistent="false"
+            android:summary="@string/media_darken_summary"
+            android:title="@string/media_darken_title"
+            app:min="0"
+            app:showSeekBarValue="true" />
+        <SeekBarPreference
+            android:defaultValue="100"
+            android:key="gaugeOpacity"
+            android:max="100"
+            android:persistent="false"
+            android:summary="@string/opacity_summary"
+            android:title="@string/opacity_title"
+            app:min="50"
+            app:showSeekBarValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:singleLineTitle="false"
+        android:title="@string/dashboards"
+        android:key="dashboardsCat">
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

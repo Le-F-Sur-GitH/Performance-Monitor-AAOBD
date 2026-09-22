@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="themedNeedle" format="reference" />
+    <attr name="themedCarBackground" format="reference" />
+    <attr name="themedDialBackground" format="reference" />
+    <attr name="themedEmptyDialBackground" format="reference" />
+    <attr name="themedBlankDialBackground" format="reference" />
+    <attr name="themedStopWatchBackground" format="reference" />
+    <attr name="themedNeedleColor" format="reference" />
+
+    <declare-styleable name="ImageListPreference">
+        <attr name="entryImages" format="reference" />
+        <attr name="tint" format="color" />
+    </declare-styleable>
+
+    <attr name="colorPrimary" format="color" />
+    <attr name="tintColor" format="color" />
+</resources>

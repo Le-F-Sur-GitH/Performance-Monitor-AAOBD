@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_credits_title">Créditos</string>
+
+    <!-- Fuzzy -->
+    <string name="activity_main_title">Performance Monitor AAOBD</string>
+    <string name="activity_settings_title">Performance Monitor AAOBD</string>
+    <string name="activity_stopwatch_title">Cronómetro</string>
+    <string name="app_car_service_name">Performance Monitor AAOBD</string>
+    <string name="app_name">Performance Monitor AAOBD</string>
+    <string name="credits_author">Baseado na aplicação desenvolvida por:</string>
+    <string name="credits_basedon">Baseado na SDK e na demo da aplicação por:</string>
+    <string name="credits_drivesafely">Conduza em segurança.</string>
+    <string name="credits_thanks">Agradecimentos especiais a:</string>
+    <string name="element_VIN">VIN</string>
+    <string name="element_batteryVoltage">Voltagem da bateria</string>
+    <string name="element_brakePressure">Pressão do circuito de travagem</string>
+    <string name="element_coolantTemperature">Temperatura do líquido de refrigeração</string>
+    <string name="element_gearboxOilTemperature">Caixa de velocidades</string>
+    <string name="element_lateralAcceleration">Aceleração lateral</string>
+    <string name="element_longitudinalAcceleration">Aceleração longitudinal</string>
+    <string name="element_navAltitude">Altitude</string>
+    <string name="element_navHeading">Direção</string>
+    <string name="element_none">Nenhum</string>
+    <string name="element_oilTemperature">Temperatura do óleo</string>
+    <string name="element_outsideTemperature">Temperatura exterior</string>
+    <string name="element_soundVolume">Volume</string>
+    <string name="element_wheelAngle">Ângulo da direção</string>
+    <string name="element_wheel">Roda</string>
+    <string name="element_world">Mundo</string>
+    <string name="element_cac">Intercooler</string>
+    <string name="element_distance">Distância</string>
+    <string name="exhaust">Escape</string>
+    <string name="element_fuel_primary">Combustível primário</string>
+    <string name="element_fuel_secondary">Combustível secundário</string>
+    <string name="element_motherboard">Placa mãe</string>
+    <string name="element_obd2">OBD2</string>
+    <string name="element_pedal">Pedal</string>
+    <string name="element_radio">Rádio</string>
+    <string name="element_tire">Pneu</string>
+    <string name="pref_centerclock">Mostradores centrais</string>
+    <string name="pref_font">Fonte</string>
+
+    <!-- Fuzzy -->
+    <string name="pref_highlow">Valores máximos</string>
+    <string name="pref_theme">Tema</string>
+    <string name="element_obd_fuelpressure">Pressão do combustível</string>
+    <string name="element_obd_engineload">Carga do motor</string>
+    <string name="element_obd_throttle_position">Posição do acelerador (admissão)</string>
+    <string name="element_obd_turboboost">Pressão do turbo</string>
+    <string name="element_obd_phonebatterylevel">Nível de bateria do telemóvel</string>
+    <string name="element_obd_phonebarometer">Barómetro do telemóvel</string>
+    <string name="element_obd_intakemanifoldpressure">Pressão no coletor de admissão</string>
+    <string name="element_obd_catalysttemperature">Temperatura do catalisador</string>
+    <string name="element_obd_fuellevel">Nível do combustível</string>
+    <string name="element_barometer">Barómetro</string>
+    <string name="bg_vw2">Fibra de carbono</string>
+    <string name="pref_background">Segundo plano</string>
+</resources>

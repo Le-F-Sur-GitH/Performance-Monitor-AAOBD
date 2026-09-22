@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.graphics.Typeface" />
+        <variable
+            name="binding"
+            type="com.lef.pmaaobd.stats.ObdChart.LegendBinding" />
+        <variable
+            name="font"
+            type="Typeface" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:colorFilter="@{binding.color}"
+            app:imageResource="@{binding.icon}"
+         />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:text="@{binding.label}"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:typeface="@{font}"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:text="@{binding.value}"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:minWidth="150dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:typeface="@{font}"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

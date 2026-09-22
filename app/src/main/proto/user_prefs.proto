@@ -1,0 +1,72 @@
+syntax = "proto3";
+
+import "google/protobuf/descriptor.proto";
+
+option java_package = "com.lef.pmaaobd.datastore";
+option java_multiple_files = true;
+
+enum MaxControl {
+  OFF = 0;
+  MIN = 1;
+  MAX = 2;
+}
+
+extend google.protobuf.EnumValueOptions {
+  optional string op = 50000;
+}
+
+enum Operation {
+  LT = 0 [(op) = "<"];
+  LTE = 1 [(op) = "<="];
+  GTE = 2 [(op) = ">="];
+  GT = 3 [(op) = ">"];
+  EQ = 4 [(op) = "="];
+}
+
+message Coloring{
+  double value = 1;
+  Operation operation = 2;
+  int32 color = 3;
+}
+
+message Display {
+  bool disabled = 25;
+  string pid = 1;
+  bool showLabel = 2;
+  string label = 3;
+  string icon = 4;
+  int32 minValue = 9;
+  int32 maxValue = 10;
+  string unit = 12;
+  bool enableScript = 13;
+  string customScript = 14;
+  bool wholeNumbers = 15;
+  bool ticksActive = 21;
+  MaxControl maxValuesActive = 22;
+  MaxControl maxMarksActive = 23;
+  bool highVisActive = 19;
+  int32 chartColor = 24;
+  repeated Coloring alarms = 26;
+}
+
+message Screen {
+  string title = 5;
+  repeated Display gauges = 6;
+  repeated Display displays = 7;
+}
+
+message UserPreference {
+  int32 currentScreen = 11;
+  bool showChart = 22;
+  repeated Screen screens = 8;
+  string selectedTheme = 16;
+  string selectedFont = 17;
+  string selectedBackground = 18;
+  bool rotaryInput = 20;
+  bool centerGaugeLarge = 21;
+  bool minMaxBelow = 23;
+  bool albumArt = 24;
+  uint32 opacity = 25;
+  uint32 blurArt = 26;
+  uint32 darkenArt = 27;
+}

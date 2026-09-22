@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_credits_title">Авторы</string>
+
+    <!-- Fuzzy -->
+    <string name="activity_main_title">Performance Monitor AAOBD</string>
+    <string name="activity_settings_title">Performance Monitor AAOBD</string>
+    <string name="activity_stopwatch_title">Секундомер</string>
+    <string name="app_car_service_name">Performance Monitor AAOBD</string>
+    <string name="app_name">Performance Monitor AAOBD</string>
+    <string name="credits_author">На базе приложения:</string>
+    <string name="credits_thanks">Особое спасибо:</string>
+    <string name="element_VIN">VIN</string>
+    <string name="element_batteryVoltage">Напряжение аккумулятора</string>
+    <string name="element_coolantTemperature">Температура охлаждающей жидкости</string>
+    <string name="element_gearboxOilTemperature">Коробка передач</string>
+    <string name="element_navAltitude">Высота</string>
+    <string name="element_navHeading">Направление</string>
+    <string name="element_none">Пусто</string>
+    <string name="element_odometer">Одометр</string>
+    <string name="element_oilTemperature">Температура масла</string>
+    <string name="element_outsideTemperature">Температура за бортом</string>
+    <string name="element_soundVolume">Громкость</string>
+    <string name="element_distance">Дистанция</string>
+    <string name="element_eco">Эко</string>
+    <string name="exhaust">Выхлоп</string>
+    <string name="element_obd2">OBD2</string>
+    <string name="element_pedal">Педаль</string>
+    <string name="element_radio">Радио</string>
+    <string name="element_wrench">Ключ</string>
+    <string name="element_tire">Шины</string>
+    <string name="pref_appearance">Оформление</string>
+    <string name="pref_centerclock">Центральный прибор</string>
+    <string name="pref_font">Шрифт</string>
+
+    <!-- Fuzzy -->
+    <string name="pref_highlow">Высокое/низкое значение</string>
+    <string name="pref_highlowmarks">Отмечать высокое/низкое значения на приборах</string>
+    <string name="pref_highvis">Высококонтрастные приборы</string>
+    <string name="pref_highvis_off">Показывать стрелку на приборах</string>
+    <string name="pref_highvis_on">Использовать закрашивание прибора вместо стрелки</string>
+    <string name="pref_leftclock">Левый прибор</string>
+    <string name="pref_rightclock">Правый прибор</string>
+    <string name="pref_theme">Тема</string>
+    <string name="element_obd_fuelpressure">Давление топлива</string>
+    <string name="element_obd_engineload">Нагрузка двигателя</string>
+    <string name="element_obd_turboboost">Давление турбины</string>
+    <string name="element_obd_phonebatterylevel">Заряд батареи телефона</string>
+    <string name="element_obd_phonebarometer">Барометр телефона</string>
+    <string name="element_obd_intakemanifoldpressure">Впускной коллектор</string>
+    <string name="element_obd_catalysttemperature">Катализатор</string>
+    <string name="element_obd_fuellevel">Уровень топлива</string>
+    <string name="element_barometer">Барометр</string>
+    <string name="bg_vw2">Углеволокно</string>
+    <string name="bg_vw3">Прожектор</string>
+    <string name="bg_black">Чёрный</string>
+    <string name="bg_cloth">Ткань</string>
+    <string name="bg_rock">Скала</string>
+    <string name="bg_plain">Простой</string>
+    <string name="bg_seat">Линии</string>
+    <string name="bg_seat2">Тёмная сетка</string>
+    <string name="bg_test">Тест</string>
+    <string name="pref_background">Фон</string>
+    <string name="bg_dots">Точки</string>
+    <string name="bg_aa">Андроид Авто</string>
+    <string name="item_details_go_back">Назад</string>
+    <string name="pid">PID</string>
+    <string name="pidLabel">Название</string>
+    <string name="pidShowLabel">Показывать название</string>
+    <string name="icon">Иконка</string>
+    <string name="obd_waiting">Ожидание OBD</string>
+
+    <!-- Fuzzy -->
+    <string name="min_value">Минимальное значение</string>
+
+    <!-- Fuzzy -->
+    <string name="max_value">Максимальное значение</string>
+    <string name="num_screens">Количество отображаемых панелей</string>
+
+    <!-- Fuzzy -->
+    <string name="rotary_input">Управление шайбой</string>
+    <string name="rotary_desc">Убрать кнопки и использвать шайбу для управления</string>
+    <string name="custom_script">Конверсия ед.изм.</string>
+    <string name="formulas">Формулы</string>
+    <string name="status_connecting_obd">Соединение с OBD</string>
+    <string name="status_connecting_to_ecu">Соединение с ECU</string>
+    <string name="export_dashboards">Экспорт панелей приборов</string>
+    <string name="import_dashboards">Импорт панелей приборов</string>
+    <string name="file_exported_successfully">Файл экспортирован успешно</string>
+    <string name="export_failed">Ошибка экспорта</string>
+    <string name="file_not_available">Файл экспорта недоступен</string>
+    <string name="whole_numbers">Целые значения</string>
+    <string name="whole_numbers_desc">Отображать целые значения</string>
+    <string name="gauge_settings">Настройки приборов</string>
+    <string name="show_label_desc_clock">Отображать название над прибором</string>
+    <string name="pref_shrink_gauge">Большой центральный прибор</string>
+    <string name="pref_shrink_gauge_off">Одинаковый размер приборов</string>
+    <string name="expressionDocumentation">Просмотр документации</string>
+    <string name="copy_logs">Скопировать лог в буфер обмена</string>
+    <string name="convert_f_to_c">Фаренгейт в Цельсий</string>
+    <string name="convert_c_to_f">Цельсий в Фаренгейт</string>
+    <string name="convert_bar_psi">BAR в PSI</string>
+    <string name="convert_psi_bar">PSI в BAR</string>
+    <string name="convert_km_to_miles">Километры в Мили</string>
+    <string name="boolean_logic">Булева логика</string>
+
+    <!-- Fuzzy -->
+    <string name="element_cylinder">Цилиндр</string>
+    <string name="element_horsepower">Лошадинные силы</string>
+    <string name="element_transmission">Трансмиссия</string>
+
+    <!-- Fuzzy -->
+</resources>
