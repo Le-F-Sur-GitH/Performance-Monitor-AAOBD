@@ -1,0 +1,3 @@
+rootProject.name = "Performance-Monitor-AAOBD"
+include ':app', ':speedviewlib'
+project(':speedviewlib').projectDir = new File(rootDir, 'lib/speedviewlib')

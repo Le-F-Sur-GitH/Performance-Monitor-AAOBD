@@ -1,0 +1,28 @@
+# Gradle / build
+.gradle/
+build/
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+output-metadata.json
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Secrets, never commit
+local.properties
+keystore.properties
+*.jks
+*.keystore
+google-services.json
+
+# Misc
+*.log
+.kotlin/
