@@ -21,7 +21,6 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [S
 - Default dashboard with RPM, speed and throttle gauges plus coolant, battery voltage, intake air temperature and engine load.
 - Automatic migration of dashboards saved by 1.x.
 - English and French translations for the adapter screen, connection states and PID names.
-- New application icon (adaptive, themed icon ready).
 - Unit tests for PID identifiers.
 
 ### Changed
